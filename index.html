@@ -68,36 +68,179 @@
     <div class="container">
         <h2>UOB Class Routine - Batch 251</h2>
         <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>9:00 AM - 10:30 AM</th>
-                        <th>10:30 AM - 12:00 PM</th>
-                        <th>12:00 PM - 1:30 PM</th>
-                        <th>2:00 PM - 3:30 PM</th>
-                        <th>3:30 PM - 5:00 PM</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Sunday</td>
-                        <td>No Class</td>
-                        <td>Math</td>
-                        <td>Physics</td>
-                        <td>CSE</td>
-                        <td>No Class</td>
-                    </tr>
-                    <tr>
-                        <td>Monday</td>
-                        <td>EEE</td>
-                        <td>English</td>
-                        <td>CSE</td>
-                        <td>Math</td>
-                        <td>No Class</td>
-                    </tr>
-                </tbody>
-            </table>
+            <table id="routine-table">
+        <tr>
+            <th>Day</th>
+            <th>9:00 AM - 10:30 AM</th>
+            <th>10:30 AM - 12:00 PM</th>
+            <th>12:00 PM - 1:30 PM</th>
+            <th>2:00 PM - 3:30 PM</th>
+            <th>3:30 PM - 5:00 PM</th>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td class="dark-cell">No Class Now</td>
+            <td>EEE 0713-1178 (IH) #EEE Lab</td>
+            <td>PHY 0533-1189 (FAS) #Phy Lab</td>
+            <td>CSE 0611-1101 (AAS) #306</td>
+            <td class="dark-cell">No Class Now</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>ME 0715-1188 (FAS) #302</td>
+            <td class="red-text">ENG 0232-100 (NF) #301</td>
+            <td>CSE 0611-1203 (FAS) #302</td>
+            <td>MAT 0541-2286 (FAS) #302</td>
+            <td class="dark-cell">No Class Now</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td class="dark-cell">No Class Now</td>
+            <td class="dark-cell">No Class Now</td>
+            <td>ME 0715-1188 (FAS) #302</td>
+            <td>CHE 0531-1191 (GKS) #CHE Lab</td>
+            <td>EEE 0713-1177 (IH) #302</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td class="red-text">ENG 0232-100 (NF) #301</td>
+            <td>HUM 0314-1193 (FI) #302</td>
+            <td>CSE 0531-1191 (GKS) #CSE Lab</td>
+            <td>MAT 0541-1183 (FAS) #306</td>
+            <td>PHY 0533-1189 (FAS) #302</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>EEE 0713-1177 (IH) #302</td>
+            <td>HUM 0413-1193 (FI) #302</td>
+            <td class="dark-cell">No Class Now</td>
+            <td class="dark-cell">No Class Now</td>
+            <td class="dark-cell">No Class Now</td>
+        </tr>
+    </table>
+    
+    <h2>Teacher's Information</h2>
+    <table>
+        <tr>
+            <th>Short Name</th>
+            <th>Full Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Subject</th>
+        </tr>
+        <tr>
+            <td>IH</td>
+            <td>Iftekhar Haider</td>
+            <td><a href="tel:+8801741718424">+8801741718424</a></td>
+            <td><a href="mailto:xyz@upcoming.com">xyz@upcoming.com</a></td>
+            <td>EEE</td>
+          </tr>
+          <tr>
+            <td>FAS</td>
+            <td>Faysal Ahmed Shipon</td>
+            <td><a href="tel:+8801632581306">+8801632581306</a></td>
+            <td><a href="mailto:xyz@upcoming.com">xyz@upcoming.com</a></td>
+            <td>PHY, MAT, ME</td>
+          </tr>
+          <tr>
+            <td>AAS</td>
+            <td>Ashiqul Alam Sadi</td>
+            <td><a href="tel:+8801680110828">+8801680110828</a></td>
+            <td><a href="mailto:xyz@upcoming.com">xyz@upcoming.com</a></td>
+            <td>CSE</td>
+          </tr>
+          <tr>
+            <td>GKS</td>
+            <td>Gulam Kibria Sikder</td>
+            <td><a href="tel:+8801843290002">+8801843290002</a></td>
+            <td><a href="mailto:xyz@upcoming.com">xyz@upcoming.com</a></td>
+            <td>CHE</td>
+          </tr>
+          <tr>
+            <td>FI</td>
+            <td>Fahmida Irin</td>
+            <td><a href="tel:+8801729353879">+8801729353879</a></td>
+            <td><a href="mailto:xyz@upcoming.com">xyz@upcoming.com</a></td>
+            <td>HUM</td>
+          </tr>
+		  <tr>
+            <td class="red-text">NF</td>
+            <td class="red-text">New Faculty</td>
+            <td><a href="tel:+8801*********">+8801*********</a></td>
+            <td><a href="mailto:***@***.com">***@***.com</a></td>
+            <td>ENG</td>
+          </tr>
+          
+    </table>
+	
+	<br>
+	<h2>Subjects Information</h2>
+	<table>
+    <tr>
+        <th>Sl. No.</th>
+        <th>Course Code</th>
+        <th>Course Title</th>
+        <th>Credits</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>CSE 0611-1101</td>
+        <td>Computer Programming Techniques</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>EEE 0713-1177</td>
+        <td>Electrical Circuit Analysis</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>EEE 0713-1178</td>
+        <td>Electrical Circuit Analysis Sessional</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>MAT 0541-1183</td>
+        <td>Differential and Integral Calculus</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>ME 0715-1188</td>
+        <td>Basic Mechanical Planning & Design</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>PHY 0533-1189</td>
+        <td>Physics & Sessional</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>CHE 0531-1191</td>
+        <td>Chemistry & Sessional</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>ENG 0232-100</td>
+        <td>Foundation English</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>HUM 0314-1193</td>
+        <td>Emergence of Bangladesh</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td colspan="3">Theory & Sessional (Combined): 21, Sessional: 1</td>
+        <td>Total: 22</td>
+    </tr>
+</table>
         </div>
     </div>
 </body>
