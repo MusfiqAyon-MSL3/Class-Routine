@@ -7,109 +7,110 @@
     <link rel="icon" type="image/png" href="https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_2/k6xchdzwkmpd1koryvtv">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            text-align: center;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
 
-        .container {
-            width: 90%;
-            margin: auto;
-            overflow-x: auto;
-        }
+.container {
+    width: 90%;
+    margin: auto;
+    overflow-x: auto;
+}
 
-        h2 {
-            text-align: center;
-            padding: 10px 0;
-        }
+h2 {
+    text-align: center;
+    padding: 10px 0;
+}
 
-        .table-container {
-            width: 100%;
-            overflow-x: auto;
-            background: white;
-            padding: 10px;
-            border-radius: 10px;
-        }
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: rgba(0, 0, 0, 0.8); /* ১ নং লিংক থেকে নিলাম, সাদা ব্যাকগ্রাউন্ড পরিবর্তন */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* ১ নং লিংকের শ্যাডো */
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-            color: #333;  /* Text color for content */
-        }
+th, td {
+    border: 2px solid white; /* ১ নং লিংকের মতো সাদা বর্ডার */
+    padding: 10px;
+    text-align: center;
+    color: white;  /* ১ নং লিংক থেকে সাদা লেখা */
+}
 
-        th {
-            background-color: #0073e6;  /* Header background color */
-            color: white;  /* Text color for header */
-            font-weight: bold;
-        }
+th {
+    background: #0073e6; /* ১ নং লিংক থেকে নিলাম, ব্লু হেডার */
+}
 
-        td {
-            background-color: #E6F7FF;  /* Light Blue color for table cells (like 1st link) */
-        }
+td {
+    background-color: #000000; /* ১ নং লিংকের মতো হালকা নীল */
+}
 
-        tr:nth-child(even) td {
-            background-color: #cce6ff;  /* Slightly darker blue for even rows */
-        }
+tr:nth-child(even) td {
+    background-color: #555;  /* ১ নং লিংকের মতো গা dark ় নীল */
+}
 
-        tr:hover {
-            background-color: #ddd;  /* Hover effect */
-        }
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* ১ নং লিংকের হোভার ইফেক্ট */
+    transition: 0.3s;
+}
 
-        /* Media Queries */
-        @media (max-width: 768px) {
-            table {
-                font-size: 14px; /* Adjust font size for tablets */
-            }
+/* Media Queries */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px; /* Adjust font size for tablets */
+    }
 
-            td, th {
-                padding: 8px; /* Decrease padding for mobile/tablet */
-            }
+    td, th {
+        padding: 8px; /* Decrease padding for mobile/tablet */
+    }
 
-            .container {
-                width: 95%;
-            }
+    .container {
+        width: 95%;
+    }
 
-            h2, h3 {
-                font-size: 1.5em;
-            }
+    h2, h3 {
+        font-size: 1.5em;
+    }
 
-            .table-container {
-                padding: 5px;
-            }
-        }
+    .table-container {
+        padding: 5px;
+    }
+}
 
-        @media (max-width: 480px) {
-            table {
-                font-size: 12px; /* Smaller font for smaller screens */
-            }
+@media (max-width: 480px) {
+    table {
+        font-size: 12px; /* Smaller font for smaller screens */
+    }
 
-            td, th {
-                padding: 6px; /* Further decrease padding */
-            }
+    td, th {
+        padding: 6px; /* Further decrease padding */
+    }
 
-            .container {
-                width: 100%;
-            }
+    .container {
+        width: 100%;
+    }
 
-            h2, h3 {
-                font-size: 1.2em;
-            }
+    h2, h3 {
+        font-size: 1.2em;
+    }
 
-            .table-container {
-                padding: 2px;
-            }
-        }
+    .table-container {
+        padding: 2px;
+    }
+}
+
 
     </style>
 </head>
@@ -118,7 +119,7 @@
         <h2>Batch 251 - Class Routine (Spring 2025)</h2>
         <h3>University of Brahmanbaria - CSE Department</h3>
 
-        
+			<h2>Class Routine</h2>
             <table id="routine-table">
                 <tr>
                     <th>Day</th>
