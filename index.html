@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UOB Class Routine</title>
+    <title>UOB Class Routine For Batch 251</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,23 +11,24 @@
             padding: 0;
             background: url('background.jpg') no-repeat center center fixed;
             background-size: cover;
+            color: white;
+            text-align: center;
         }
 
         .container {
             width: 90%;
             margin: auto;
-            overflow-x: auto; /* স্ক্রল করার সুবিধা */
+            overflow-x: auto;
         }
 
         h2 {
             text-align: center;
-            color: white;
             padding: 10px 0;
         }
 
         .table-container {
             width: 100%;
-            overflow-x: auto; /* ছোট স্ক্রিনে টেবিল স্ক্রল হবে */
+            overflow-x: auto;
             background: white;
             padding: 10px;
             border-radius: 10px;
@@ -36,13 +37,14 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            min-width: 600px;
         }
 
         th, td {
             padding: 10px;
             text-align: center;
             border: 1px solid #ddd;
-            white-space: nowrap; /* ছোট স্ক্রিনে টেবিল ঠিক রাখা */
+            white-space: nowrap;
         }
 
         th {
@@ -50,30 +52,14 @@
             color: white;
         }
 
-        /* ✅ মোবাইল স্ক্রিনের জন্য RESPONSIVE CSS */
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             .table-container {
+                overflow-x: auto;
+            }
+            table {
                 display: block;
                 overflow-x: auto;
-                white-space: nowrap;
-            }
-            table, thead, tbody, th, td, tr {
-                display: block;
-            }
-            tr {
-                margin-bottom: 10px;
-                border-bottom: 2px solid #ddd;
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-                background: #f8f9fa;
-                border-radius: 5px;
-            }
-            td {
-                text-align: left;
-                display: flex;
-                justify-content: space-between;
-                padding: 5px;
+                width: 100%;
             }
         }
     </style>
@@ -86,29 +72,29 @@
                 <thead>
                     <tr>
                         <th>Day</th>
-                        <th>Time</th>
-                        <th>Subject</th>
-                        <th>Room</th>
+                        <th>9:00 AM - 10:30 AM</th>
+                        <th>10:30 AM - 12:00 PM</th>
+                        <th>12:00 PM - 1:30 PM</th>
+                        <th>2:00 PM - 3:30 PM</th>
+                        <th>3:30 PM - 5:00 PM</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Sunday</td>
-                        <td>10:00 AM - 12:00 PM</td>
-                        <td>Mathematics</td>
-                        <td>Room 101</td>
+                        <td>No Class</td>
+                        <td>Math</td>
+                        <td>Physics</td>
+                        <td>CSE</td>
+                        <td>No Class</td>
                     </tr>
                     <tr>
                         <td>Monday</td>
-                        <td>11:00 AM - 1:00 PM</td>
-                        <td>Physics</td>
-                        <td>Room 202</td>
-                    </tr>
-                    <tr>
-                        <td>Tuesday</td>
-                        <td>2:00 PM - 4:00 PM</td>
-                        <td>Computer Science</td>
-                        <td>Room 303</td>
+                        <td>EEE</td>
+                        <td>English</td>
+                        <td>CSE</td>
+                        <td>Math</td>
+                        <td>No Class</td>
                     </tr>
                 </tbody>
             </table>
